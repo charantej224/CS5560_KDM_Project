@@ -20,7 +20,7 @@ prostate_cancer = ['https://www.mayoclinic.org/diseases-conditions/prostate-canc
 cancer_dict = {'breast_cancer': breast_cancer, 'lung_cancer': lung_cancer, 'skin_cancer': skin_cancer,
                'colorectal_cancer': colorectal_cancer, 'prostate_cancer': prostate_cancer}
 
-skip_list = []
+skip_list = ['colorectal_cancer', 'lung_cancer', 'skin_cancer', 'prostate_cancer.txt']
 
 for key, value in cancer_dict.items():
     final_content = ""
