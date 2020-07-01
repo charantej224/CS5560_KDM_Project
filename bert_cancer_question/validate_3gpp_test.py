@@ -11,7 +11,6 @@ the MME chooses the non-GBR EPS bearer with the QCI corresponding to the highest
  If the MME has no EPS bearers active for the UE, then this fact is indicated to the eNB. '''
 
 question = "who is the sender?"
-manual_answer = 'Swelling in the face or neck Difficulty swallowing or pain while swallowing Changes in the appearance of fingers, called finger clubbing'
 generated_answer = answer_question(question, bert_abstract)
 
 print('--------------------------------------------')
@@ -22,19 +21,6 @@ print('--------------------------------------------')
 print("Question Asked to System")
 print('--------------------------------------------')
 print(question)
-print('--------------------------------------------')
-print('manual answer given by user')
-print('--------------------------------------------')
-print(manual_answer)
-print('--------------------------------------------')
 print('system answer given by user')
 print('--------------------------------------------')
 print(generated_answer)
-print('--------------------------------------------')
-print('Rouge Score for the generated answer')
-print('--------------------------------------------')
-print(get_rouge_score(manual_answer, generated_answer))
-print('--------------------------------------------')
-print('BLEU Score for the generated answer')
-print('--------------------------------------------')
-print(get_bleu_score(manual_answer, generated_answer))
